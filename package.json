@@ -1,0 +1,9 @@
+{
+  "name": "Jenga",
+  "version": "1.0.0",
+  "description": "a Web IDE",
+  "main": "index.js",
+  "repository": "https://github.com/lianghx-319/Jenga.git",
+  "author": "Han",
+  "license": "MIT"
+}
