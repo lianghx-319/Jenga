@@ -1,9 +1,21 @@
 {
-  "name": "Jenga",
+  "name": "jenga",
   "version": "1.0.0",
-  "description": "a Web IDE",
+  "description": "a web ide",
   "main": "index.js",
-  "repository": "https://github.com/lianghx-319/Jenga.git",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lianghx-319/Jenga.git"
+  },
   "author": "Han",
-  "license": "MIT"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lianghx-319/Jenga/issues"
+  },
+  "homepage": "https://github.com/lianghx-319/Jenga#readme",
+  "dependencies": {},
+  "devDependencies": {}
 }
