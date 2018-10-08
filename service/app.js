@@ -6,6 +6,10 @@ const pluginHapiSwagger = require("./plugins/hapi-swagger.js")
 
 const dbUri = `mongodb://${config.dbuser}:${config.dbpwd}@ds028559.mlab.com:28559/service-learning`
 
+const dbOptions = {
+    useNewUrlParser: true
+}
+
 const server = new Hapi.Server()
 
 server.connection({
@@ -26,7 +30,8 @@ const init = async () => {
     console.log(`Server running at: ${server.info.uri}`)
 }
 
-db.connect(dbUri, { useNewUrlParser: true })
+db.set("useCreateIndex", true)
+db.connect(dbUri, dbOptions)
 db.connection.once("open", () => {
     console.log("connected to database")
     init();

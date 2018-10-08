@@ -17,5 +17,7 @@
   },
   "homepage": "https://github.com/lianghx-319/Jenga#readme",
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
 }

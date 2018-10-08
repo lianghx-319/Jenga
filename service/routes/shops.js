@@ -1,12 +1,14 @@
 const Joi = require("joi")
 const GROUP_NAME = "shops"
+const { Shops } = require("../models")
 
 module.exports = [
     {
         method: "GET"
         , path: `/${GROUP_NAME}`
         , handler: async (request, reply) => {
-            reply();
+            const result = await Shops.find()
+            reply(result);
         }
         , config: {
             tags: ["api", GROUP_NAME]
